@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add these inside the <head> tag -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+
+    <title>my First PortFolio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="containerFluid">
+    <h2>Past Projects </h2>
+    <p>Embark on an extraordinary
+         journey of limitless creation through the captivating realm of programming. 
+         Allow the power of coding to be the brush with which you paint your innovative visions,
+          enabling you to not only solve real-world challenges but also shape the very trajectory of the future itself. As you navigate the intricate pathways of algorithms and languages, 
+          you'll discover the remarkable capacity of your code to spark transformative change on a global scale. Every line you write becomes a testament to your ingenuity, a potential 
+          catalyst for positive shifts in the way we interact, communicate, and thrive. So, step into this exhilarating world of programming, where the possibilities are as boundless as your imagination, 
+          and let your code resound as a force of innovation that has the potential to change the course of our world for the better.</p>
+  </div>
+  <div class="projects">
+    <div class="projectImage">
+        <img src="{{ url_for('static', filename='image/chatapp.png')}}" alt="">
+    </div>
+    <div class="projectQuestions">
+        <p>Services: : WordPress</p>
+        <p>Duration: : 1 week</p>
+        <p>Tools: : WordPress</p>
+    </div>
+  </div>
+  <div class="projects">
+    <div class="projectImage">
+        <img src="{{ url_for('static', filename='image/fooddelivery.jpg')}}" alt="">
+    </div>
+    <div class="projectQuestions">
+        <p>Services: : Front End</p>
+        <p>Duration: : 1 week</p>
+        <p>Tools: : Html and Css</p>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="projectImage">
+        <img src="{{ url_for('static', filename='image/socialImage.png')}}" alt="">
+    </div>
+    <div class="projectQuestions">
+        <p>Services: : Full Staxk</p>
+        <p>Duration: : 1 month</p>
+        <p>Tools: : Python and React </p>
+    </div>
+  </div>
+
+  <div class="about-container">
+    <h1>Message </h1>
+    <p style="font-size: tiny;">Reply Are been Sent Instantly To The Email Below </p>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="contact-container">
+    <h2>Contact Information</h2>
+    <p>Phone: <a href="tel:+234 7036626371">+234 7036626371</a></p>
+    <p>Address : Sango otta , Ogun state , Nigeria.</p>
+      
+  
+</body>

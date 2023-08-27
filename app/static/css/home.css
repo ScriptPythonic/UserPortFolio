@@ -1,0 +1,386 @@
+.navbar-nav .nav-link {
+    font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+  }
+
+
+body{
+  overscroll-behavior: none;
+}
+
+
+.containerFluid {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    /* Add background image */
+    background-image: url('../image/Haywhy.jpg');
+    background-size: 209px 280px;
+    background-repeat: no-repeat;
+    /* Center the background image horizontally and move it down by 35% of the container's height */
+    background-position: 36% left;
+   
+  
+  }
+  
+ 
+  
+ 
+  /* Styles for the logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ensure the image doesn't stretch */
+  .logo img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  /* Additional styles to align items vertically within the logo */
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Adjust the position of the image within the logo */
+  .logo img {
+    margin-bottom: 10px; /* Add spacing between image and text */
+  }
+  
+
+  .about {
+    display: flex;
+  }
+  
+  .aboutLeft {
+    flex: 1;
+    padding-right: 20px; /* Add some spacing between aboutLeft content and comment section */
+  }
+  
+  .aboutRight {
+    flex: 1;
+  }
+  
+  .comment-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 45px; 
+  }
+  
+  .rating {
+    font-size: 24px;
+  }
+  
+  .star {
+    color: gold;
+  }
+  
+  .comment {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .comment-text {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+  }
+
+  /* Customize the font and add animation */
+.comment-text p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+  
+    color: #333;
+  }
+  
+ 
+ 
+  
+  
+  .comment-info {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .comment-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .commentator {
+    font-size: 14px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .date {
+    color: #999;
+  }
+  
+  .experiencebox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .numberBox {
+    padding: 20px;
+    border: 1px solid #999;
+    margin: 10px;
+  }
+  
+  .numberBox h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .numberBox p {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .expertiseBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center; /* Center the content horizontally */
+    color:#007bff;
+  }
+
+  .works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .projectsImage {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .projectsImage img {
+    max-width: 100%; /* Set the image width to fit within the container */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .projectsImage p {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .projectsImage button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+  .about-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .about-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-container p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+
+  @media screen and (max-width: 993px){
+
+    .about{
+      display: block;
+    }
+
+    .works{
+      display: block;
+    }
+
+    .numberBox{
+      padding: 0;
+      font-size: 10px;
+      margin: 5px;
+    }
+
+    .numberBox p{
+      font-size: 12px;
+    }
+
+    .projectsImage{
+      margin: 10px;
+    }
+
+   
+
+    .aboutLeft, .aboutRight{
+      margin-top: 10px;
+      
+    }
+    .aboutRight {
+      flex: 1;
+      margin-top: 20px; /* Reduce top margin for better spacing */
+    }
+    
+    .comment-section {
+      border: 1px solid #ccc;
+      padding: 15px; /* Reduce padding for better use of space */
+      margin-top: 30px; 
+    }
+    
+    .rating {
+      font-size: 20px; /* Slightly reduce font size */
+    }
+    
+    .star {
+      color: gold;
+    }
+    
+    .comment {
+      display: block; /* Change display to block for better stacking */
+      margin-top: 10px;
+    }
+    
+    .comment-text {
+      padding: 10px 0; /* Adjust padding for better space utilization */
+      border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+    }
+    
+    /* Customize the font and add animation */
+    .comment-text p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 14px; /* Slightly reduce font size */
+      color: #333;
+      margin: 0; /* Reset default margins */
+    }
+    
+    .comment-info {
+      display: flex;
+      align-items: center;
+      padding-left: 0; /* Remove left padding for better alignment */
+    }
+    
+    .comment-info img {
+      width: 40px; /* Reduce image size */
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 8px; /* Slightly reduce right margin */
+    }
+    
+    .commentator {
+      font-size: 12px; /* Reduce font size */
+    }
+    
+    .name {
+      font-weight: bold;
+    }
+    
+    .date {
+      color: #999;
+    }
+    
+
+   
+    }
+    
+  
+
+  

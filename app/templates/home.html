@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add these inside the <head> tag -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+    <title>my First PortFolio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ 
+     <div class="containerFluid">
+        <div class="logo">
+            <a href="#"><img src="{{ url_for('static', filename='svg/icons8-facebook.svg')}}"/></a>
+            <a href="#"><img src="{{ url_for('static', filename='svg/icons8-github.svg')}}"/></a>
+            <a href="#"><img src="{{ url_for('static', filename='svg/icons8-instagram.svg')}}"/></a>
+            <a href="#"><img src="{{ url_for('static', filename='svg/icons8-linkedin.svg')}}"/></a>
+            <a href="#"><img src="{{ url_for('static', filename='svg/icons8-snapchat-circled-logo.svg')}}"/></a>
+        </div>
+     </div>
+
+    <div class="about">
+            <div class="aboutLeft">
+            <h4 style="color: #007bff;"> Reviews </h4>
+
+
+            <div class="comment-section">
+                <div class="rating">
+               
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="comment">
+                  <div class="comment-text">
+                    <!-- Comment content -->
+                    <p>His unwavering commitment shines through in his fast, meticulous, and responsive approach to work. A dedicated professional who consistently prioritizes ensuring customer satisfaction and high-quality results.</p>
+                  </div>
+                  <div class="comment-info">
+                    <!-- Commentator avatar, name, and date -->
+                    <img src="{{ url_for('static', filename="image/icons8-avatar.gif")}}" alt="Commentator Avatar"/>
+                    <div class="commentator">
+                      <p class="name">QUADRI B.A</p>
+                      <p class="date">August 25, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="aboutRight">
+                   <h2>The Swiftly Expanding Digital Startup Relies On My Expertise.</h2>
+                  <div class="experiencebox">
+                    <div class="numberBox">
+                      <h3>1+</h3>
+                      <p>Years of experience</p>
+                    </div>
+
+                    <div class="numberBox">
+                      <h3>7+</h3>
+                      <p>Completed projects </p>
+                    </div> 
+
+                    <div class="numberBox">
+                      <h3>3</h3>
+                      <p>Satisfied Customers </p>
+                    </div>
+
+                  </div>
+                  
+                  <div class="expertiseBox">
+                    <div class="expertiseImage">
+                      <img src="{{ url_for('static', filename="svg/icons8-django.svg")}}" alt="">
+                      <p>Django</p>
+                    </div>
+
+                    <div class="expertiseImage">
+                        <img src="{{ url_for('static', filename="svg/icons8-node-js.svg")}}" alt="">
+                        <p>Node Js</p>
+                    </div>
+                    <div class="expertiseImage">
+                      <img src="{{ url_for('static', filename="image/icons8-flask-50.png")}}" alt="">
+                      <p>Flask</p>
+                    </div>
+
+                    <div class="expertiseImage">
+                      <img src="{{ url_for('static', filename="image/icons8-php-50.png")}}" alt="">
+                      <p>PHP</p>
+                    </div>
+
+                  </div>
+            
+    </div>
+    </div>
+
+   <h2 class="leftalone" style="text-align: center; color: #007bff;"> PROJECTS</h2>
+    <div class="works">
+         
+      <div class="projectsImage">
+        <img src="{{ url_for('static', filename='image/chatapp.png')}}" alt="">
+        <p>"Introducing ChatApp: Revolutionizing communication. Seamlessly connect with friends and family through instant messaging, voice calls, and more. Your conversations, elevated." </p>
+        <button type="button" class="btn btn-primary">Check Project</button>
+      </div>
+      <div class="projectsImage">
+        <img src="{{ url_for('static', filename='image/socialimage.png')}}" alt="">
+        <p>"Experience the future of social networking with our innovative app. Connect, share, and engage with friends old and new like never before. Elevate your social experience today." </p>
+        <button type="button" class="btn btn-primary">Check Project</button>
+      </div>
+      <div class="projectsImage">
+        <img src="{{ url_for('static', filename='image/fooddelivery.jpg')}}" alt="">
+        <p> "Delicious moments delivered. Satisfy your cravings with our user-friendly food delivery app. Browse, order, and enjoy a variety of cuisines from the comfort of your home."</p>
+        <button type="button" class="btn btn-primary">Check Project</button>
+      </div>
+    </div>
+
+    <div class="about-container">
+      <h1>Message </h1>
+      <p style="font-size: tiny;">Reply Are been Sent Instantly To The Email Below </p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-container">
+      <h2>Contact Information</h2>
+      <p>Phone: <a href="tel:+234 7036626371">+234 7036626371</a></p>
+      <p>Address : Sango otta , Ogun state , Nigeria.</p>
+        
+    
+</body>
+</html>
